@@ -35,7 +35,7 @@ public class DatagramPacketDeEncoderTest {
 
     @Before
     public void setUp() {
-        channel = new EmbeddedChannel(new DatagramObjectEncoder<String>(),
+        channel = new EmbeddedChannel(new DatagramObjectEncoder<TestMessage>(),
                                       new DatagramObjectDecoder(new ObjectDecoder(ClassResolvers.cacheDisabled(null))));
     }
 
