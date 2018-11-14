@@ -36,8 +36,8 @@ import java.util.List;
  * interoperability with this encoder.
  */
 @Sharable
-public class DatagramObjectEncoder<M extends Serializable> extends
-                                                           MessageToMessageEncoder<AddressedEnvelope<M, InetSocketAddress>> {
+public class DatagramObjectEncoder<M extends Serializable>
+        extends MessageToMessageEncoder<AddressedEnvelope<M, InetSocketAddress>> {
     private final ObjectEncoder objectEncoder;
 
     /**

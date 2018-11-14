@@ -62,7 +62,7 @@ public class DatagramPacketDeEncoderTest {
         assertEquals(result.sender(), sender);
     }
 
-    private class TestMessage implements Serializable {
+    private final class TestMessage implements Serializable {
         private final String hello;
 
         private TestMessage(String hello) {
